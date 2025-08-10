@@ -1,0 +1,5 @@
+Use keyboard.hook instead of keyboard.on_press. It gives better low-level access.
+Suppresssion is not working on Linux when (suppressed=True) is set as a parameter
+to the keyboard module. So, do keyboard.hook(suppressed=True) instead. I do
+not know what will happen on Windows. The keyboard module will work on Windows
+even if you run it as a regular user iirc
