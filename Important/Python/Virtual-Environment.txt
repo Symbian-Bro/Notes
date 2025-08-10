@@ -1,2 +1,5 @@
-If a Python module needs sudo privileges to be executed properly, do not run "sudo python3 example.py". Because you are installing the module using "pip install <module_name>. This installs the module to directory of your user, not the root. So to run the program with sudo, give sudo privileges to your user and not try executing it as the root as the module is not installed as root. Sooo.. There proper way to do it is "sudo myenv/bin/python3 example.py"
+If a Python module needs sudo privileges to be executed properly, do not run "sudo python3 example.py".
+Because you are installing the module using "pip install <module_name>. This installs the module to directory of your user, not the root.
+So to run the program with sudo, give sudo privileges to your user and not try executing it as the root as the module is not installed as root.
+Sooo.. The proper way to do it is "sudo myenv/bin/python3 example.py"
 Yeah, I know what you are thinking. Do not do "sudo pip install <module_name>" at any cost. Most probably will have consequences :)
