@@ -3,3 +3,8 @@ Suppresssion is not working on Linux when (suppressed=True) is set as a paramete
 to the keyboard module. So, do keyboard.hook(suppressed=True) instead. I do
 not know what will happen on Windows. The keyboard module will work on Windows
 even if you run it as a regular user iirc
+
+The event.name of keyboard module will return long ass strings like Backspace, Enter, etc.
+So, differentiate between these kinds of results and letters, use len(event.name)==1 to
+check if it as letter or not. Treat these special keys as SPECIAL. Add a whole different 
+code snippet to handle them.
