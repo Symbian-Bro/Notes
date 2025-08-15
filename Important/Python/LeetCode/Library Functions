@@ -1,3 +1,13 @@
 Use stoi to convert a string to an integer and to_string to convert an integer to 
 a string. Use stoll if the value is greater than INT_MAX of stoi. Assign the output 
 to a long long variable for proper execution.
+
+Example implementation of substring method to split strings :
+{
+std::string str = "Hello, World!";
+std::string part = str.substr(7, 5); // start at index 7, length 5
+}
+
+Note : Added this because it will come in handy when you are performing the above 
+stoi and such operations on large strings. Even stoll won't work on very long strings. 
+So split them into parts and apply those methods.
